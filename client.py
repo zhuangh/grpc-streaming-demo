@@ -24,7 +24,7 @@ def run():
     it = stub.PrimeFactors(gen())
     try:
         for r in it:
-            print("Prime factor = {r.result}")
+            print("Prime factor = ", r.result)
     except grpc._channel._Rendezvous as err:
         print(err)
 
