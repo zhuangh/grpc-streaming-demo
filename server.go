@@ -1,14 +1,16 @@
 package main
 
 import (
+	pb "./protobuf"
 	"flag"
 	"fmt"
-	pb "github.com/ridha/grpc-streaming-demo/protobuf"
 	grpc "google.golang.org/grpc"
 	"io"
 	"math"
 	"net"
 )
+
+//pb "github.com/ridha/grpc-streaming-demo/protobuf"
 
 type primeFactorsServer struct{}
 

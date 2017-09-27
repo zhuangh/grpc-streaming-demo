@@ -27,11 +27,12 @@ To generate the Go code, you'll need to install  protoc_.
 
 .. code-block:: bash
 
- # Python client
+ # Python client (or use virtualenv)
  $ pip3 install -U grpcio grpcio-tools
  $ python3 -m grpc_tools.protoc -I protobuf/ --python_out=. --grpc_python_out=. protobuf/primefactor.proto
  # Go
  $ protoc -I protobuf/ --go_out=plugins=grpc:protobuf/ protobuf/primefactor.proto
+ # protoc3
 
 The first command will generate primefactor_pb2.py and primefactor_pb2_grpc.py.
 The latter will generate primefactor.pb.go.
